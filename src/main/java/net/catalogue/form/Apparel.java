@@ -16,7 +16,7 @@ public class Apparel {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
-	private String apparelname;
+	private String name;
 	
 	private int price;
 	
@@ -34,12 +34,12 @@ public class Apparel {
 
 
 	public String getApparelname() {
-		return apparelname;
+		return name;
 	}
 
 
-	public void setApparelname(String apparelname) {
-		this.apparelname = apparelname;
+	public void setApparelname(String name) {
+		this.name = name;
 	}
 
 
@@ -65,6 +65,6 @@ public class Apparel {
 
 	@Override
 	public String toString(){
-		return "id="+id+", apparelname="+apparelname+", price="+price+", stock="+stock;
+		return "id="+id+", name="+name+", price="+price+", stock="+stock;
 	}
 }

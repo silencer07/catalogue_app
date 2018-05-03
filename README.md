@@ -11,14 +11,14 @@
 1. Make sure you have installed and connected to mysql server -- (Installed using Homebrew): `mysql -v -u<username> -p<password>`
 2. Create database: `CREATE DATABASE CATALOGUE;`
 3. Use database: `use CATALOGUE;`
-4. Create Apparel Table:
+4. Create Apparels Table:
 ```
 		CREATE TABLE APPARELS
 		(
-		    apparel_id       INT PRIMARY KEY AUTO_INCREMENT,
-		    apparel_name    VARCHAR(30),
-		    apparel_price    INT,
-		    apparel_stock   INT
+		    id       INT PRIMARY KEY AUTO_INCREMENT,
+		    name    VARCHAR(30),
+		    price    INT,
+		    stock   INT
 		)
 ```
 

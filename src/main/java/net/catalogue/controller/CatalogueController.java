@@ -23,8 +23,8 @@ public class CatalogueController {
 	
 	@RequestMapping(value="/apparels", method = RequestMethod.GET)
 	public String listApparels(Model model){
-		model.addAttribute("apparel", new Apparel());
+		model.addAttribute("index", new Apparel());
 		model.addAttribute("listApparels", this.catalogueService.listApparels());
-		return "apparel";
+		return "index";
 	}
 }
